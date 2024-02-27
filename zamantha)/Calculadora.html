@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.
+    1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.
+    1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js">
+        </script>
+        <Link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet"></Link>
+        <link href="https://fonts.cdnfonts.com/css/petit"  rel="stylesheet" ></Link>
+    <title>perfil de sam</title>
+</head>
+<body>
+    <div style="margin: 2px;">
+        <nav class="navba navbar-light"
+        style="background-color: indianred;">
+        <div class="countainer">
+            <a class="navbar-brand" href="Index.html"
+            style="color:darkred;">Inicio</a>
+    <div class="collage navbar-collapse
+    "id="navbarNavDropdown">
+    <ul class="nav navbar-nav"></ul>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href=""
+        id="navbarDropdownMenuLink"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false">Unidad 1</a>
+       <div class="dropdown-menu"
+       aria-labelledby="navbarDripdownMenuLink">
+       <a  class="dropdown-item"
+       href="PERfil.html">perfil</a><br>
+    <a class="dropdown-item"  href="Calculadora.html">Calculadora</a><br>
+    <a  class="dropdown-item"  href="tienda.html">Tienda parte 1</a>
+    </div>
+    
+    
+    </li>
+  
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=""
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">Unidad 2</a>
+           <div class="dropdown-menu"
+           aria-labelledby="navbarDripdownMenuLink">
+        <a  class="dropdown-item"
+        href="PERfil.html">perfil</a><br>
+        <a class="dropdown-item"  href="json.html">json</a><br>
+        <a  class="dropdown-item"  href="tienda.html">Tienda pedido 2</a>
+        </div>
+        
+        
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=""
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">Unidad 3</a>
+           <div class="dropdown-menu"
+           aria-labelledby="navbarDripdownMenuLink">
+        <a  class="dropdown-item"
+        href="PERfil.html">perfil</a><br>
+        <a class="dropdown-item"  href="basededatos.html">base de datos</a><br>
+        <a  class="dropdown-item"  href="peliculas.html">peliculas</a>
+        </div>
+   
+        </div>
+        <style>
+            *{        
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                display: grid;
+                place-items: center;
+                background-image: linear-gradient(to left,rgb(174, 132, 133)
+                
+              #a2d2ff  );
+              height: 80vh;
+            }
+            .calc{
+                width: 90%;
+                height: 90%;
+                background-color: rgb(129, 129, 182);
+                position: relative;
+                border: 2px solid #ffc8dd;
+                border-radius: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #ans{
+                width: 90%;
+                align-content: center;
+                margin-top: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                color: antiquewhite;
+                text-align: right;
+            }
+            .btn input[type='button']{
+                width: 70px;
+                padding: 2px;
+                margin: 40px;
+                position: relative;
+                left: 23px;
+                top: 20px;
+                height: 55px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: all 0.5s ease;
+                background-color: palevioletred;
+                border-radius: 6px;
+            }
+            .btn input[type='button'].hover{
+                background-color: deeppink;
+            }
+        </style>
+        
+        <div class="calc"></div>
+        <input type="text" id="ans">
+        <div class="btn"></div>
+        <input type="button" value='c'
+        onclick="clear()">
+        <input type="button" value='%'
+        onclick="solve('%')">
+         <input type="button" value='←'
+        onclick="solve('←')">
+        <input type="button" value='/'
+        onclick="solve('/')">
+        <br>
+        <input type="button" value='7'
+        onclick="solve('7')">
+        <input type="button" value='8'
+        onclick="solve('8')">
+        <input type="button" value='9'
+        onclick="solve('9')">
+        <input type="button" value='X'
+        onclick="solve('*')">
+        <br>
+        <input type="button" value='4'
+        onclick="solve('4')">
+        <input type="button" value='5'
+        onclick="solve('5')">
+        <input type="button" value='6'
+        onclick="solve('6')">
+        <input type="button" value='-'
+        onclick="solve('-')">
+        <br>
+        <input type="button" value='1'
+        onclick="solve('1')">
+        <input type="button" value='2'
+        onclick="solve('2')">
+        <input type="button" value='3'
+        onclick="solve('3')">
+        <input type="button" value='+'
+        onclick="solve('+')">
+        <br>
+        <input type="button" value='00'
+        onclick="solve('00')">
+        <input type="button" value='0'
+        onclick="solve('0')">
+         <input type="button" value='.'
+        onclick="solve('.')">
+        <input type="button" value='='
+        onclick="solve('')">        
+        <script>
+            const solve = ()=>{
+                const v=document.getElementById('ans');
+                v.value+=val;
+            
+            }
+            const Clear = () =>{
+                const input= document.getElementById('ans');
+                input.value='';
+        
+            }
+            const Result = () =>{
+                const v1= document.getElementById('ans').value;
+                const v2= eval(v1);
+                document.getElementById('ans').value0v2;
+            }
+            const Back = () =>{
+            const back=documnet.getElementById('ans');
+            back.value=back.value.slice(0,-1);
+            }
+          </script>
+</body>
+</html>
